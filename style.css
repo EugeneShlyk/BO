@@ -1,0 +1,44 @@
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  width: 100%;
+  /*display: flex;*/
+  /*flex-direction: column;*/
+  /*align-items: center;*/
+  background-color: blue;
+  margin: 0;
+  padding: 0;
+}
+
+@media (min-width: 400px) {
+  .header {
+
+  }
+}
+
+.header__inner {
+ background-color: blueviolet;
+  min-height: 70px;
+  width: 343px;
+  margin: 0 auto;
+}
+
+.header__link {
+
+}
+
+footer {
+  height: 100px;
+  background-color: blue;
+}
