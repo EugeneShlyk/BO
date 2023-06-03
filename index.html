@@ -3,25 +3,41 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;1,200&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Geologica:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <title>INTERIOR LOUNGE — дизайн общественных пространств</title>
 </head>
 
 <body>
 
-<header>
-
+<header class="header">
+  <div class="header__box">
+    <a class="header__link" href="#">
+      <picture>
+        <source media="(min-width: 1440px)" srcset="image/header-logo-desktop.svg" width="151" height="41">
+        <img class="header__mobile-logo" src="image/header-logo.svg" width="105" height="29" alt="логотип сайта">
+      </picture>
+    </a>
+    <a class="header__demo-access" href="#">Демо-доступ</a>
+    <nav class="header__navigation header__navigation--nojs">
+      <button class="header__navigation-toggle" type="button">
+        <img class="header__navigation-toggle-image" src="image/navigation.svg" alt="навигация по сайту" width="36" height="36">
+      </button>
+    </nav>
+  </div>
 </header>
 
-<main>
+<main class="page-main">
 
 </main>
 
-<footer>
+<footer class="footer">
 
 </footer>
 
+<script src="js/script.js"></script>
 </body>
 
 </html>
