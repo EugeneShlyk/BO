@@ -11,7 +11,7 @@ const onShowNavigation = () => {
     navigation.classList.remove('navigation__opened') ;
     navigation.classList.add('navigation--closed');
   }
-});
+};
 
 navToggle.addEventListener('click', onShowNavigation);
 
