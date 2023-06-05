@@ -1,4 +1,5 @@
-import { onShowNavigation } from './navigation.js';
+import { onShowNavigation } from "./navigation.js";
 
+const navToggle = document.querySelector(".main-nav-toggle");
 
-onShowNavigation()
+navToggle.addEventListener("click", onShowNavigation);

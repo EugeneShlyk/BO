@@ -29,6 +29,7 @@ html {
 }
 
 .header {
+  position: relative;
   width: 100%;
 }
 
@@ -72,6 +73,11 @@ html {
   background-color: rgba(252, 103, 51, 0.5);
 }
 
+.main-nav {
+  margin: 0;
+  padding: 0;
+}
+
 .main-nav-toggle {
   width: 36px;
   height: 36px;
@@ -91,9 +97,28 @@ html {
 }
 
 .main-nav__list {
+  position: absolute;
+  left: 0;
+  top: 75px;
+  display: grid;
+  gap: 5px;
   margin: 0;
   padding: 0;
   list-style: none;
+  background-color: rgba(246, 246, 246, 1);
+}
+
+.main-nav__item {
+  margin: 0;
+  padding: 20px 45px;
+  font-size: 18px;
+  color: rgba(0, 0, 0, 0.8);
+  background: rgba(255, 255, 255, 1) url("image/gray-item-style.svg") 22px 23px / 14px 14px no-repeat;
+}
+
+.main-nav__item--current {
+  color: rgba(252, 103, 51, 1);
+  background: url("image/orange-item-style.svg") 22px 23px / 14px 14px no-repeat;
 }
 
 .page-header {
