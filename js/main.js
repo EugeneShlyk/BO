@@ -1,3 +1,4 @@
-import { onShowNavigation } from './navigation';
+import { onShowNavigation } from './navigation.js';
+
 
 onShowNavigation()

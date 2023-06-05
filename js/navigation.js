@@ -1,7 +1,7 @@
-const navigation = document.querySelector('.header__navigation');
-const navToggle = document.querySelector('.header__navigation-toggle');
+const navigation = document.querySelector('.header__main-nav');
+const navToggle = document.querySelector('.main-nav-toggle');
 
-navigation.classList.remove('header__navigation--nojs');
+navigation.classList.remove('main-nav--nojs');
 
 const onShowNavigation = () => {
   if (navigation.classList.contains('navigation--closed')) {

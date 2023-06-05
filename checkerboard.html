@@ -21,16 +21,17 @@
       </picture>
     </a>
     <a class="header__demo-access" href="#">Демо-доступ</a>
-    <nav class="header__navigation header__navigation--nojs">
-      <button class="header__navigation-toggle" type="button">
+    <nav class="header__main-nav main-nav main-nav--nojs">
+      <button class="main-nav-toggle" type="button">
         <img
-            class="header__navigation-toggle-image"
+            class="main-nav-toggle-image"
             src="image/navigation.svg"
             alt="навигация по сайту"
             width="36"
             height="36"
         >
       </button>
+      <ul class="main-nav__list"></ul>
     </nav>
   </div>
 </header>
@@ -99,22 +100,22 @@
     </ol>
     <ol class="slider-checkerboard__pagination-list">
       <li class="slider-checkerboard__pagination-item">
-        <button class="slider-checkerboard__pagination-item-button slider-checkerboard__pagination-item-button--current"></button>
+        <button class="slider-checkerboard__pagination-item-button slider-checkerboard__pagination-item-button--current" type="button"></button>
       </li>
       <li class="slider-checkerboard__pagination-item">
-        <button class="slider-checkerboard__pagination-item-button"></button>
+        <button class="slider-checkerboard__pagination-item-button" type="button"></button>
       </li>
       <li class="slider-checkerboard__pagination-item">
-        <button class="slider-checkerboard__pagination-item-button"></button>
+        <button class="slider-checkerboard__pagination-item-button" type="button"></button>
       </li>
       <li class="slider-checkerboard__pagination-item">
-        <button class="slider-checkerboard__pagination-item-button"></button>
+        <button class="slider-checkerboard__pagination-item-button" type="button"></button>
       </li>
       <li class="slider-checkerboard__pagination-item">
-        <button class="slider-checkerboard__pagination-item-button"></button>
+        <button class="slider-checkerboard__pagination-item-button" type="button"></button>
       </li>
       <li class="slider-checkerboard__pagination-item">
-        <button class="slider-checkerboard__pagination-item-button"></button>
+        <button class="slider-checkerboard__pagination-item-button" type="button"></button>
       </li>
     </ol>
   </section>
@@ -124,7 +125,8 @@
 
 </footer>
 
-<script src="js/main.js"></script>
+<script src="js/main.js" type="module"></script>
+
 </body>
 
 </html>

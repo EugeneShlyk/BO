@@ -72,7 +72,7 @@ html {
   background-color: rgba(252, 103, 51, 0.5);
 }
 
-.header__navigation-toggle {
+.main-nav-toggle {
   width: 36px;
   height: 36px;
   margin: 0;
@@ -82,12 +82,18 @@ html {
   cursor: pointer;
 }
 
-.header__navigation-toggle:hover .header__navigation-toggle-image{
+.main-nav-toggle:hover .main-nav-toggle-image{
   opacity: 0.7;
 }
 
-.header__navigation-toggle:active .header__navigation-toggle-image {
+.main-nav-toggle:active .main-nav-toggle-image {
   opacity: 0.5;
+}
+
+.main-nav__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 .page-header {
