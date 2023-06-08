@@ -15,6 +15,3 @@ const onShowNavigation = () => {
 };
 
 export { onShowNavigation };
-
-// main-nav--closed
-// main-nav--opened
