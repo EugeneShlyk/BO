@@ -562,7 +562,7 @@ a {
 }
 
 .price-system__item {
-  margin: 0;
+  margin: 0 0 2;
   padding: 0;
 }
 
@@ -577,7 +577,71 @@ a {
   line-height: 28px;
 }
 
-.price-system__connection-term-text {
-  margin: 0 0 20px;
+/********** Range Input Styles **********/
+/*Range Reset*/
+.price-system__connection-term-range {
+  -webkit-appearance: none;
+  appearance: none;
+  background: transparent;
+  cursor: pointer;
+  width: 343px;
+  margin: 0;
   padding: 0;
+}
+
+/* Removes default focus */
+.price-system__connection-term-range:focus {
+  outline: none;
+}
+
+/***** Chrome, Safari, Opera and Edge Chromium styles *****/
+/* slider track */
+.price-system__connection-term-range::-webkit-slider-runnable-track {
+  background-color: rgba(38, 85, 255, 1);
+  border-radius: 0;
+  height: 2px;
+}
+
+/* slider thumb */
+.price-system__connection-term-range::-webkit-slider-thumb {
+  -webkit-appearance: none; /* Override default look */
+  appearance: none;
+  margin-top: -6px; /* Centers thumb on the track */
+
+  /*custom styles*/
+  background-color: rgba(38, 85, 255, 1);
+  height: 14px;
+  width: 14px;
+  border-radius: 50%;
+}
+
+.price-system__connection-term-range:focus::-webkit-slider-thumb {
+  border: 1px solid #053a5f;
+  outline: 3px solid #053a5f;
+  outline-offset: 0.125rem;
+}
+
+/******** Firefox styles ********/
+/* slider track */
+.price-system__connection-term-range::-moz-range-track {
+  background-color: rgba(38, 85, 255, 1);
+  border-radius: 0;
+  height: 2px;
+}
+
+/* slider thumb */
+.price-system__connection-term-range::-moz-range-thumb {
+  border: none; /*Removes extra border that FF applies*/
+  border-radius: 50%; /*Removes default border-radius that FF applies*/
+
+  /*custom styles*/
+  background-color: rgba(38, 85, 255, 1);
+  height: 14px;
+  width: 14px;
+}
+
+.price-system__connection-term-range:focus::-moz-range-thumb {
+  border: 1px solid #053a5f;
+  outline: 3px solid #053a5f;
+  outline-offset: 0.125rem;
 }
