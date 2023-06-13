@@ -250,12 +250,12 @@
         <fieldset class="price-system__fieldset">
           <legend class="visually-hidden">форма оформления подписки</legend>
           <ul class="price-system__list">
-            <li class="price-system__item">
+            <li class="price-system__item cost-calculation">
 
-              <label class="price-system__connection-term price-system-label" for="connection-term-range">Срок
+              <label class="cost-calculation__connection-term price-system-title" for="connection-term-range">Срок
                 подключения</label>
               <input
-                  class="price-system__connection-term-range"
+                  class="cost-calculation__connection-term-range"
                   type="range"
                   id="connection-term-range"
                   value="6"
@@ -263,33 +263,35 @@
                   max="9"
                   step="3"
               >
-              <ol class="price-system__list-months-connection">
-                <li class="price-system__item-months-connection">
-                  <span class="price-system__item-month-connection">1 мес.</span>
+              <ol class="cost-calculation__list-months-connection">
+                <li class="cost-calculation__item-months-connection">
+                  <span class="cost-calculation__item-month-connection">1 мес.</span>
                 </li>
-                <li class="price-system__item-months-connection">
-                  <span class="price-system__item-month-connection">3 мес.</span>
-                  <span class="price-system__item-month-connection-discount">-10%</span>
+                <li class="cost-calculation__item-months-connection">
+                  <span class="cost-calculation__item-month-connection">3 мес.</span>
+                  <span class="cost-calculation__item-month-connection-discount">-10%</span>
                 </li>
-                <li class="price-system__item-months-connection">
-                  <span class="price-system__item-month-connection">6 мес.</span>
-                  <span class="price-system__item-month-connection-discount">-15%</span>
+                <li class="cost-calculation__item-months-connection">
+                  <span class="cost-calculation__item-month-connection">6 мес.</span>
+                  <span class="cost-calculation__item-month-connection-discount">-15%</span>
                 </li>
-                <li class="price-system__item-months-connection">
-                  <span class="price-system__item-month-connection">1 год</span>
-                  <span class="price-system__item-month-connection-discount">-20%</span>
+                <li class="cost-calculation__item-months-connection">
+                  <span class="cost-calculation__item-month-connection">1 год</span>
+                  <span class="cost-calculation__item-month-connection-discount">-20%</span>
                 </li>
               </ol>
             </li>
+            <li class="price-system__item number-rooms">
+              <label class="number-rooms__title price-system-title" for="number-rooms-title">Количество номеров</label>
+              <div class="number-rooms__button-input-box">
+                <button class="number-rooms__button number-rooms__button--minus"></button>
+                <input class="number-rooms__input" type="number" id="number-rooms-title">
+                <button class="number-rooms__button number-rooms__button--plus"></button>
+              </div>
+            </li>
           </ul>
-          <div class="number-rooms">
-            <label class="number-rooms__title price-system-label" for="number-rooms-title">Количество номеров</label>
-            <div class="number-rooms__button-input-box">
-              <button class="number-rooms__button"></button>
-              <input class="number-rooms__input" type="number" id="number-rooms-title">
-              <button class="number-rooms__button"></button>
-            </div>
-          </div>
+          <span class="price-system-title">Расчет стоимости</span>
+
         </fieldset>
       </form>
     </div>

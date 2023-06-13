@@ -619,49 +619,47 @@ a {
   list-style: none;
 }
 
-.price-system__item:not(:last-child) {
+.price-system__item {
   margin: 0 0 40px;
   padding: 0;
 }
 
-.price-system__connection-term {
-  margin: 0;
-  padding: 0;
-}
-
-.price-system-label {
+.price-system-title {
+  display: block;
   font-weight: 400;
   font-size: 16px;
   line-height: 28px;
   margin: 0 0 20px;
+  padding: 0;
 }
 
 /********** Range Input Styles **********/
 /*Range Reset*/
-.price-system__connection-term-range {
+.cost-calculation__connection-term-range {
   -webkit-appearance: none;
   appearance: none;
   background: transparent;
   cursor: pointer;
   width: 343px;
+  margin: 0;
   padding: 0;
 }
 
 /* Removes default focus */
-.price-system__connection-term-range:focus {
+.cost-calculation__connection-term-range:focus {
   outline: none;
 }
 
 /***** Chrome, Safari, Opera and Edge Chromium styles *****/
 /* slider track */
-.price-system__connection-term-range::-webkit-slider-runnable-track {
+.cost-calculation__connection-term-range::-webkit-slider-runnable-track {
   background-color: rgba(38, 85, 255, 1);
   border-radius: 0;
   height: 2px;
 }
 
 /* slider thumb */
-.price-system__connection-term-range::-webkit-slider-thumb {
+.cost-calculation__connection-term-range::-webkit-slider-thumb {
   -webkit-appearance: none; /* Override default look */
   appearance: none;
   margin-top: -6px; /* Centers thumb on the track */
@@ -673,7 +671,7 @@ a {
   border-radius: 50%;
 }
 
-.price-system__connection-term-range:focus::-webkit-slider-thumb {
+.cost-calculation__connection-term-range:focus::-webkit-slider-thumb {
   border: 1px solid #053a5f;
   outline: 3px solid #053a5f;
   outline-offset: 0.125rem;
@@ -681,14 +679,14 @@ a {
 
 /******** Firefox styles ********/
 /* slider track */
-.price-system__connection-term-range::-moz-range-track {
+.cost-calculation__connection-term-range::-moz-range-track {
   background-color: rgba(38, 85, 255, 1);
   border-radius: 0;
   height: 2px;
 }
 
 /* slider thumb */
-.price-system__connection-term-range::-moz-range-thumb {
+.cost-calculation__connection-term-range::-moz-range-thumb {
   border: none; /*Removes extra border that FF applies*/
   border-radius: 50%; /*Removes default border-radius that FF applies*/
 
@@ -698,13 +696,13 @@ a {
   width: 14px;
 }
 
-.price-system__connection-term-range:focus::-moz-range-thumb {
+.cost-calculation__connection-term-range:focus::-moz-range-thumb {
   border: 1px solid #053a5f;
   outline: 3px solid #053a5f;
   outline-offset: 0.125rem;
 }
 
-.price-system__list-months-connection {
+.cost-calculation__list-months-connection {
   display: flex;
   justify-content: space-between;
   margin: 0;
@@ -712,13 +710,13 @@ a {
   list-style: none;
 }
 
-.price-system__item-months-connection {
+.cost-calculation__item-months-connection {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.price-system__item-month-connection {
+.cost-calculation__item-month-connection {
   margin: 0 0 10px;
   padding: 0;
   font-weight: 400;
@@ -726,7 +724,7 @@ a {
   line-height: 22px;
 }
 
-.price-system__item-month-connection-discount {
+.cost-calculation__item-month-connection-discount {
   margin: 0;
   padding: 0;
   font-weight: 400;
@@ -734,3 +732,35 @@ a {
   line-height: 18px;
   color: rgba(0, 0, 0, 0.6);
 }
+
+.number-rooms__button-input-box {
+  display: flex;
+  width: 110px;
+}
+
+.number-rooms__button {
+  width: 26px;
+  height: 28px;
+  border: none;
+  margin: 0;
+  padding: 0;
+  /*background: transparent;*/
+}
+
+.number-rooms__button--minus {
+  background: transparent url("image/minus-form.svg") 50% 50% / 12px 2px no-repeat;
+}
+
+.number-rooms__button--plus {
+  background: transparent url("image/plus-form.svg") 50% 50% / 12px 12px no-repeat;
+}
+
+.number-rooms__input {
+  width: 58px;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: 2px solid rgba(38, 85, 255, 1);
+}
+
+
