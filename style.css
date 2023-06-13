@@ -423,14 +423,6 @@ a {
   border: none;
 }
 
-.slider-checkerboard__pagination-item-button:hover {
-  outline: blueviolet;
-}
-
-.slider-checkerboard__pagination-item-button:active {
-  outline: blueviolet;
-}
-
 .slider-checkerboard__pagination-item-button--current {
   background: url("image/checkerboard-pagination/pagination-item-current.svg") 50% 50% / 12px 12px no-repeat;
 }
